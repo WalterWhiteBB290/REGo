@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo y Rene</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+        #texto {
+            font-size: 2em;
+            color: black;
+        }
+        /* Estilos para el arcoíris */
+        .rainbow-background {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="texto">Ricardo y Rene son gey s</div>
+
+    <script>
+        document.getElementById("texto").addEventListener("click", function() {
+            document.body.style.background = "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)";
+            this.innerText = "Son aun MÁS GEYS";
+            this.classList.add("rainbow-background");
+        });
+    </script>
+</body>
+</html>
